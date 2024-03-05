@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, clone repository:
 
 ```html
-git clone src/app/layout.tsx
+git clone https://github.com/ww-side/next-panel
 ```
 
 Second, open the project folder and install dependencies
