@@ -1,6 +1,7 @@
 "use client";
 import { Button, Typography } from "antd";
 import { v4 as uuid } from "uuid";
+import toast from "react-hot-toast";
 import { cardsStore } from "@/store/cards";
 import {
   generateRandomDataForFunnelWidget,
@@ -20,6 +21,8 @@ const CreationPanel = () => {
       data01: pieData01,
       data02: pieData02,
     });
+
+    toast.success("Pie widget was successfully created!");
   };
 
   const handleCreateLineWidget = () => {
@@ -28,6 +31,8 @@ const CreationPanel = () => {
       widget_type: Widgets.LINE_CHART,
       data01: generateRandomDataForLineWidget(),
     });
+
+    toast.success("Line widget was successfully created!");
   };
 
   const handleCreateFunnelWidget = () => {
@@ -36,6 +41,8 @@ const CreationPanel = () => {
       widget_type: Widgets.FUNNEL_CHART,
       data01: generateRandomDataForFunnelWidget(),
     });
+
+    toast.success("Funnel widget was successfully created!");
   };
 
   return (
